@@ -1,0 +1,186 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+    margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+    /* Colors are in hexadecimal: http://www.colorpicker.com/ */
+    color: #CC00AA;
+}
+
+body {
+    margin-top: 6%;
+}
+
+.coursePage {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.jumbotron {
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 16px;
+    padding-left: 2px;
+    background: none;
+}
+
+.jumbotron:after {
+    content:"";
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.jumbotron h1 {
+    font-size: xx-large;
+}
+
+.class a {
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-radius: 12px;
+}
+
+#course1 {
+}
+
+#course_title {
+    /*text-align: center;*/
+    float: left;
+}
+
+#course_subtitle1 {
+    margin-top: 6%;
+    font-weight: 700;
+}
+
+#course_subtitle2 {
+    margin-top: 15%;
+    font-weight: 700;
+}
+
+.title {
+    font-weight: bold;
+    width: 100%;
+    font-size: 95%;
+}
+
+.subtitle {
+    margin-left: 3.5px;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.video {
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+
+.videoPreview {
+    width: 45%;
+    align: left;
+    border: #cfcfcf 1.25px solid;
+    border-radius: 6px;
+}
+
+.videoDescription p{
+    width: 50%;
+    float: right;
+    padding-left: 3%;
+}
+
+.podcastVideo {
+    width: 100%;
+}
+
+.weeks {
+    font-weight: bold;
+    margin-left: 3%;
+    margin-top: 4%;
+}
+
+.lectures {
+    margin-left: 10%;
+    line-height: 2;
+}
+
+.inputBox {
+    width: 85%;
+    padding-left: 2.5%;
+    padding-top: 1.2%;
+}
+
+.submit {
+    width: 12%;
+    border:aliceblue;
+    height: 2.5em;
+    border-radius:6px;
+    margin-top: 1%;
+}
+
+.input {
+    height: 3em;
+    border: #cfcfcf solid 1.5px;
+    border-radius:6px;
+}
+
+.note {
+    font-weight: bold;
+    float: left;
+    width: 90%;
+}
+
+#notesdiv {
+    line-height: 2.3;
+}
+
+#content {
+    float: left;
+}
+
+#timestamp {
+    float: right;
+    width: 12%;
+}
+
+#noteTitle {
+    margin-top: 28px;
+}
+
+.info {
+    font-size: 70%;
+}
+
+#searchBar {
+    width: 90%;
+    font-style: italic;
+    border: none;
+}
+
+#search {
+    border: 1px solid #cfcfcf;
+    border-radius: 12px;
+    margin-bottom: 5%;
+    height: 3em;
+    padding-top:0.5em;
+    padding-left: 1em;
+    box-shadow: 0em 0.2em 0.7em #cfcfcf;
+    vertical-align:baseline;
+}
+
+.deleteNote {
+    float: right;
+    padding-right: 0.7em;
+}
+
+.user_info {
+
+}
