@@ -16,7 +16,6 @@
 <!-- FB login sdk -->
     {{> facebook}}
     <script src="/js/facebook.js"></script>
-
 </head>
 
 
@@ -31,11 +30,9 @@
 		<p id="welcome_login">Welcome back to the largest podcats community that offers university level courses!</p>
 	</div>
 
-
-         
 	    <div class="container">
         <!--start of the login form-->
-		 <form action="/action_page.php" method="post">
+		 <form action="/home" method="get" id="loginForm">
 
 		  <div class="imgcontainer">
 		    <img src="https://i.pinimg.com/originals/73/0e/d3/730ed3fee48c368cb76ca21a7edaa4fa.jpg" alt="Avatar" class="avatar">
@@ -48,7 +45,7 @@
 		    <label for="psw"><b>Password</b></label>
 		    <input type="password" placeholder="Enter Password" name="psw" required>
 		        
-		    <button type="submit" onclick="handleLogin()">Login</button>
+		    <button id="loginButton" type="submit" >Login</button>
 		    <label>
 		      <input type="checkbox" checked="checked" name="remember"> Remember me
 		    </label>
@@ -57,34 +54,21 @@
 		  <div class="container" style="background-color:#f1f1f1">
 		  	   <p>login with Facebook</p>
 			   <!--facebook login button-->
-			            <div class="fb-login">
-			              <fb:login-button auto_logout_link="true" scope="public_profile, email" onlogin="checkLoginState()">
-			              </fb:login-button>
-			            </div>
-
-
+              <div class="fb-login">
+                  <fb:login-button auto_logout_link="true" scope="public_profile, email" onlogin="checkLoginState()">
+                  </fb:login-button>
+              </div>
 		  </div>
-
 		</form>
         <!--end of the login form-->
-
-  
-
-
-
-
-
 	</div>
-	
-	</div>
-
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-
-	<script>
-        function handleLogin() {
-            window.location.href = `http://localhost:3000/home/Clair Li`;
-        }
-    </script>
+    <script src="/js/index.js"></script>
+<!--    <script>-->
+<!--        function handleLogin() {-->
+<!--            window.location.href = `http://localhost:3000/home/Clair Li`;-->
+<!--        }-->
+<!--    </script>-->
 </body>
 </html>

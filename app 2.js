@@ -38,7 +38,6 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.login);
-app.get('/home', index.home_login);
 app.get('/home/:name', index.home);
 app.get('/home/course/:name/:quarter/:prof', course.viewCourse);
 app.get('/home/course/:courseName/:quarter/:week/:lecture/:prof', course.viewLecture);
